@@ -8,6 +8,7 @@
       <h2 class="subtitle">
         Microcommunity Search service thingy
       </h2>
+      <p>this line is for a test to see if auto-deploying works</p>
       <div class="links">
         <a
           href="https://nuxtjs.org/"
