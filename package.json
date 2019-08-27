@@ -32,6 +32,7 @@
     "nuxt": "^2.0.0"
   },
   "devDependencies": {
+    "@nuxtjs/style-resources": "^1.0.0",
     "@vue/test-utils": "^1.0.0-beta.27",
     "babel-eslint": "^10.0.3",
     "babel-jest": "^24.1.0",
@@ -43,7 +44,9 @@
     "husky": "^3.0.4",
     "jest": "^24.1.0",
     "lint-staged": "^9.2.5",
+    "node-sass": "^4.12.0",
     "prettier": "^1.18.2",
+    "sass-loader": "^7.3.1",
     "vue-jest": "^4.0.0-0"
   }
 }
