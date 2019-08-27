@@ -9,15 +9,41 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
-    "test": "jest"
+    "test": "jest",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "lintfix": "eslint --fix --ext .js,.vue --ignore-path .gitignore ."
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ],
+    "*.vue": [
+      "eslint --ext .vue --fix",
+      "git add"
+    ]
   },
   "dependencies": {
     "nuxt": "^2.0.0"
   },
   "devDependencies": {
     "@vue/test-utils": "^1.0.0-beta.27",
+    "babel-eslint": "^10.0.3",
     "babel-jest": "^24.1.0",
+    "eslint": "^6.2.2",
+    "eslint-config-prettier": "^6.1.0",
+    "eslint-loader": "^3.0.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-vue": "^5.2.3",
+    "husky": "^3.0.4",
     "jest": "^24.1.0",
+    "lint-staged": "^9.2.5",
+    "prettier": "^1.18.2",
     "vue-jest": "^4.0.0-0"
   }
 }
